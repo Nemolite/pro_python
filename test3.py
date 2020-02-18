@@ -34,6 +34,11 @@ if info_slovo['n3'] == True:
 else:
 	print(False)
 
+genre = info_slovo1.get('Genre', 'Rock')
+print(genre)
+print(info_slovo1)
+
+
 
 
 
