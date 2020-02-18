@@ -19,9 +19,20 @@ m = 10
 while m>0:
     m+=1
     print(m)
-    if m == 100:
+    if m == 17:
     	break
 #Словари
+info_slovo = dict(n1=25,n2='dfr',n4=True)
+print(info_slovo)
+print(info_slovo['n1'])
+
+info_slovo1 = dict([('f1',24),('f2','stop')])
+print(info_slovo1)
+info_slovo['n3'] =False
+if info_slovo['n3'] == True:
+	print(True)
+else:
+	print(False)
 
 
 
