@@ -8,3 +8,22 @@ for name in names:
 for name in name_to_rev:
 	names.remove(name)
 print(names)
+
+#while цикл
+n = 5
+while n>0:
+	n = n - 1
+	print(n)
+print("----------")
+m = 10
+while m>0:
+    m+=1
+    print(m)
+    if m == 100:
+    	break
+#Словари
+
+
+
+
+	
