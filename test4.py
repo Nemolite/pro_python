@@ -36,7 +36,18 @@ bidlo_result = 0
 bidlo_result = arr_spisok[0]+arr_spisok[1]+arr_spisok[2]+arr_spisok[3]+arr_spisok[4]+arr_spisok[5]+arr_spisok[6]+arr_spisok[7]+arr_spisok[8]+arr_spisok[9]+arr_spisok[10]+arr_spisok[11]
 print(bidlo_result)
 
-
+print("************************************")
+arr_spisok1 = [3,9,2,4,1,-2,-5,-3,0,2,4,7]
+g=0
+rg = 0
+while g<5:
+	for binex in range(len(arr_spisok1)):
+		arr_spisok1[binex] = arr_spisok1[binex] + 1
+		rg = rg + arr_spisok1[binex]
+	print('Цикл==',g,'Сумма ==',rg)
+	g = g + 1	
+print(arr_spisok1)
+print(rg)  
 
 
 	
