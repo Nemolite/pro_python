@@ -47,7 +47,9 @@ while g<5:
 	print('Цикл==',g,'Сумма ==',rg)
 	g = g + 1	
 print(arr_spisok1)
-print(rg)  
+print(rg)
+
+#Применение циклов  
 
 
 	
