@@ -37,3 +37,4 @@ del slovar['key2']
 print(slovar)
 for vname in slovar:
 	print(vname)
+
