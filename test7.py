@@ -5,3 +5,13 @@ for key,val in s2.items():
 	for v1 in val:
 		r = r + v1
 	print(key,r)
+print('-----------------')
+for key,val in s2.items():
+	print(key,sum(val))
+
+rn = 0
+for key1,val1 in s2.items():
+	for v2 in val1:
+		if v2%2 != 0:
+			rn = rn + v2
+print(rn)
