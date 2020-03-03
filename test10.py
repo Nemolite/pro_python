@@ -1,5 +1,4 @@
 import pymysql.cursors  
-
 # Подключиться к базе данных.
 connection = pymysql.connect(host='localhost',
                              user='root',
@@ -11,23 +10,22 @@ connection = pymysql.connect(host='localhost',
 print ("connect successful!!")
  
 try:
-  
- 
-    with connection.cursor() as cursor:
-       
-        # SQL 
-        sql = "SELECT * FROM one "
-         
-        # Выполнить команду запроса (Execute Query).
-        cursor.execute(sql)
-         
-        print ("cursor.description: ", cursor.description)
- 
-        print()
- 
-        for row in cursor:
-            print(row)
-             
+     with connection.cursor() as cursor:
+   
+        add_emp = ("INSERT INTO t "
+               "(a, b)"
+               "VALUES (%(a)s, %(b)s)")
+
+        data_sal = {
+            'a': 27,
+            'b': 34,
+            
+        }
+     
+        cursor.execute(add_emp,data_sal)
+        connection.commit()
+      
+           
 finally:
-    # Закрыть соединение (Close connection).      
+    
     connection.close()
