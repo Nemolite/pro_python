@@ -31,3 +31,23 @@ def selt2(n1,n2,n3):
 	
 selt2(2,3,2)
 
+print("---------6---------")
+spi = ['qwe',123,'444',45]
+
+def selt3(spiexam):
+	#print(spiexam)
+	a = 123
+	for ver1 in spiexam:
+		if a == ver1:
+			fl = True
+		else:
+			fl = False
+
+	if fl == False:
+		return -1
+	else:
+		return 1
+
+ff = selt3(spi)
+print(ff)
+
