@@ -40,6 +40,7 @@ def selt3(spiexam):
 	for ver1 in spiexam:
 		if a == ver1:
 			fl = True
+			break
 		else:
 			fl = False
 
