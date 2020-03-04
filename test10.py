@@ -15,13 +15,12 @@ try:
         add_emp = ("INSERT INTO t "
                "(a, b)"
                "VALUES (%(a)s, %(b)s)")
-
         data_sal = {
             'a': 27,
             'b': 34,
-            
+         
         }
-     
+    
         cursor.execute(add_emp,data_sal)
         connection.commit()
       
