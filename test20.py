@@ -18,8 +18,6 @@ print(f)
 
 send = ftp.retrbinary("STOR "+ "exfile2.xlsx", f)
 
-
-
 ftp.quit()
 
 
