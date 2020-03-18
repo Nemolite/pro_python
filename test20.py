@@ -10,13 +10,13 @@ print(dss)
 
 ftp.retrlines('LIST') 
 
-filename = 'D:\\bcb\\Python\\exfile2.xlsx'
+filename = 'D:\\bcb\\Python\\test.py'
 
 f = open(filename, 'wb')
 
 print(f)
 
-send = ftp.retrbinary("STOR "+ "exfile2.xlsx", f)
+send = ftp.retrbinary("STOR "+ "test.py", f)
 
 ftp.quit()
 
